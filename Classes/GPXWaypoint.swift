@@ -207,7 +207,7 @@ class ISO8601DateParser {
         }
         
         var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = GPXParser.timezone
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
         calendarCache[0] = calendar
         return calendar.date(from: components)
     }

@@ -79,9 +79,6 @@ class CreationViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Create GPX"
-        
         dateField.text = "current date"
         dateField.isEnabled = false
         
